@@ -10,9 +10,7 @@
     position: relative
     left: 160px
     bottom: 20px
-
-@media screen and (max-width: $screen-sm-min)
-    .code-card-html
+    @include sm
         left: 120px
 
 .code-card-header
@@ -34,10 +32,10 @@
     position: relative
     left: 220px
     bottom: 20px
-
-@media screen and (max-width: $screen-sm-min)
-    .code-card-scss
+    @include sm
         left: 160px
+
+
 
 .l-margin-left-2rem
     margin-left: 2rem !important
@@ -49,8 +47,27 @@
     position: relative
     left: 160px
     bottom: 20px
-
-@media screen and (max-width: $screen-sm-min)
-    .code-card-js
+    @include sm
         left: 120px
 
+
+@keyframes blink 
+    0%
+        opacity: 0
+    50%
+        opacity: 0
+    51%
+        opacity: 1
+    100%
+        opacity: 1
+    
+.cursor
+    animation-duration: 1s
+    animation-timing-function: ease
+    animation-delay: 0s
+    animation-iteration-count: infinite
+    animation-direction: normal
+    animation-fill-mode: none
+    animation-play-state: running
+    animation-name: blink
+        

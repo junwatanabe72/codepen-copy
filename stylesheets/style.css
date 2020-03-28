@@ -20,26 +20,6 @@ ul {
   list-style: none;
   padding-left: 0; }
 
-@keyframes blink {
-  0% {
-    opacity: 0; }
-  50% {
-    opacity: 0; }
-  51% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-.cursor {
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: blink; }
-
 .l-flex {
   display: flex; }
 
@@ -83,6 +63,12 @@ ul {
 .button-secondary {
   border: 0;
   background: #444857; }
+
+.header-buttons {
+  padding: 8px; }
+  .header-buttons .button {
+    margin-right: 8px;
+    min-width: 100px; }
 
 .product-item-card {
   border-radius: 4px;
@@ -208,6 +194,26 @@ ul {
   .code-card-js {
     left: 120px; } }
 
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  51% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+.cursor {
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: blink; }
+
 .features {
   justify-content: center; }
 
@@ -319,24 +325,6 @@ ul {
   background: #252830;
   border: 0; }
 
-.header-buttons {
-  padding: 8px; }
-  .header-buttons .button {
-    margin-right: 8px;
-    min-width: 100px; }
-
-.sidebar .codepen-logo:before {
-  content: "C"; }
-
-.sidebar .codepen-logo::after {
-  content: "DE PEN"; }
-
-.footer-copyright .footer-logo:before {
-  content: "C"; }
-
-.footer-copyright .footer-logo::after {
-  content: "DE PEN"; }
-
 .search-form {
   width: 100%;
   margin: 8px;
@@ -351,13 +339,6 @@ ul {
   font-weight: bold;
   background: #252830;
   border: 0; }
-
-.l-header-buttons {
-  padding: 8px; }
-  .l-header-buttons > .button {
-    margin-right: 8px;
-    min-width: 100px;
-    text-decoration: none; }
 
 @media screen and (max-width: 576px) {
   .sidebar {

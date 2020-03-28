@@ -4,6 +4,15 @@
 $background-color: #131417
 // declare your variables for color
 
+$warning: #ffdd40
+$primary: #47cf73
+$accent: #0ebeff
+$weak: #b7bbc8
+$hilight-orange: #a88038
+$hilight-beige: #e1ca72
+$hilight-green: #74b087
+$hilight-purple: #9f8198
+$hilight-blue: #7a99ad
 
 // Break Points:
 
@@ -17,3 +26,8 @@ $screen-lg-min: 992px
 
 // Large tablets and desktops
 $screen-xl-min: 1200px
+
+
+@mixin sm
+    @media screen and (max-width: $screen-sm-min)
+

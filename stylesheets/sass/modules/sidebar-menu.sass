@@ -1,25 +1,13 @@
-@media screen and (max-width: $screen-sm-min)
-    .sidebar
-        display: none
-
 .sidebar
     background: #1F1F26
-
-.codepen-logo
-    text-align: center
+    @include sm
+        display: none
 
 .get-start-text
     margin: 0.2em
     font-size: 0.8em
     text-align: center
     color: #b7bbc8
-
-.button-logo
-    margin: 0 16px
-    border: 3px solid transparent
-    width: 154px
-    padding: 0
-    background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b)
 
 .button-logo-text
     display: block

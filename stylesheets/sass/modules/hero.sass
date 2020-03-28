@@ -8,13 +8,8 @@
 .hero-body-description
     width: 50%
     padding: 32px
-
-@media screen and (max-width: $screen-sm-min)
-    .hero-body-description
+    @include sm
         width: 100%
-
-.hero-logo
-    font-size: 36px
 
 .hero-body-description-title
     margin: 0
@@ -31,10 +26,8 @@
 
 .hero-body-image
         width: 50%
-
-@media screen and (max-width: $screen-sm-min)
-    .hero-body-image
-        width: 100%
+        @include sm
+            width: 100%
 
 .hero-body-image-card
     margin: 16px auto
